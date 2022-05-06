@@ -42,11 +42,8 @@ h2 ~ p {
 }
 .header-logo:hover,
 .header-logo:active {
-  opacity: 0.5;
-}
-.header-logo:hover,
-.header-logo:active {
   background-color: purple;
+  opacity: 0.5;
 }
 .header-logo img {
   width: 8vh;
@@ -65,13 +62,15 @@ h2 ~ p {
 }
 .header-nav a {
   color: #fff;
+}
+.nav-links a {
   font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
 }
-.header-nav a:hover,
-.header-nav a:active {
+.nav-links a:hover,
+.nav-links a:active {
   color: rgb(255, 217, 0);
 }
 .header-nav > li:first-child a {
@@ -90,6 +89,14 @@ h2 ~ p {
 .footer-logo img {
   width: 50px;
 }
+.footer-nav li {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin: 2em 1em 0;
+}
+.footer-nav a {
+  color: #fff;
+}
 .footer h3 {
   color: #fff;
   padding-top: 1.5em;
@@ -102,17 +109,15 @@ h2 ~ p {
 /* HERO STYLES */
 .full-hero {
   background-color: #e7c7fc;
-  height: 50vh;
+  height: 50vh; 
   position: relative;
-}
-.full-hero:hover{
-  background-color: rgb(255, 217, 0);
 }
 
 /* SOCIAL STYLES */
 .social-link {
   background: rgba(150, 150, 150, 0.5);
-  border-radius: 99px;
+  /*makes border a cirlce*/
+  border-radius: 99px;      
   box-sizing: border-box;
   color: #fff;
   display: inline-block;
@@ -129,7 +134,7 @@ h2 ~ p {
 }
 .social-link:hover,
 .social-link:active{
-  background-color: #ed6e2f;
+  background-color: purple;
 }
 .social-list {
   list-style: none;
